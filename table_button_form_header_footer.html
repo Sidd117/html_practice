@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABC</title>
+    </head>
+    <body>
+
+    <!---TABLE-->
+    <h3>Marks</h3>
+    <table border="2" style="background-color: red;">
+        <tr align=""center"" style="background-color: blue;">
+        <th width = 50>121</th>
+        <th width = 50>122</th>
+        <th width = 50>123</th>
+        <th width = 50>124</th>
+        <th width = 50>125</th>
+        </tr>
+        <tr align="center" style="background-color: cadetblue;">
+            <td>90</td>
+            <td>82</td>
+            <td>56</td>
+            <td>40</td>
+            <td>99</td>
+        </tr>
+        <tr align="center" style="background-color: cornflowerblue;">
+            <td>58</td>
+            <td>69</td>
+            <td>91</td>
+            <td>28</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <!--BUTTON-->
+    <a href = "types of list.html">
+    <button style = "font-size: 25px; background-color: aquamarine; color:red; border-radius: 20px">Click Me</button>
+    </a>
+
+    <button onclick="doSomthing()">Click Me as well</button>
+    <p id = "1">Hello</p>
+    <script>
+        function doSomthing(){
+            document.getElementById("1").innerHTML = "GoodBye"
+        }
+    </script>
+
+    <!--FORMS-->
+
+    <form action="index.php" method="POST"><!--Post is for confidentail information and get for insensitive data-->
+
+        <label for="username">username:</label>
+        <input type = "text" id="username" placeholder = "abc_123" required minlength="3" maxlength="10">
+
+        <label for="p">password:</label>
+        <input type = "password" id="p">
+
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="abc@xyz.com">
+
+        <label for="phone">phone no.:</label>
+        <input type="tel" id="phone" placeholder="+91 0000000000" pattern="[0-9]{5}-[0-9]{5}">
+
+        
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+
+    </body>
+</html>
